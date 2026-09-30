@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>리스트로 수직 메뉴 만들기</title>
+    <style>
+        /* ul 태그 기본 점 마커 및 여백 제거 */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 150px;                   /* 메뉴 바 전체 너비 지정 */
+            background-color: darkolivegreen;/* 배경색 설정 */
+        }
+
+        /* 메뉴 항목(a 태그) 스타일 지정 */
+        li a {
+            display: block;                 /* 링크 영역을 블록 전체로 확장하여 수직 배치 */
+            color: khaki;                   /* 기본 글자 색상 */
+            padding: 10px 15px;             /* 내부 여백 */
+            text-decoration: none;          /* 밑줄 제거 */
+            font-weight: bold;
+        }
+
+        /* 마우스를 올렸을 때 (hover 상태) */
+        li a:hover {
+            color: magenta;                 /* 마우스를 올리면 magenta 색상으로 변경 */
+        }
+    </style>
+</head>
+<body>
+
+    <h3>리스트로 수직 메뉴 만들기</h3>
+    <hr>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Espresso</a></li>
+        <li><a href="#">Cappuccino</a></li>
+        <li><a href="#">Cafe Latte</a></li>
+        <li><a href="#">F.A.Q</a></li>
+    </ul>
+
+</body>
+</html>

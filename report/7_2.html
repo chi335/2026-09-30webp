@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>왼쪽 90도, 오른쪽 90도 회전</title>
+    <style>
+        /* 키프레임 정의: 0도 -> 왼쪽(-90도) -> 오른쪽(90도) -> 0도 */
+        @keyframes rotateLeftRight {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-90deg); /* 왼쪽으로 90도 회전 */
+            }
+            75% {
+                transform: rotate(90deg);  /* 오른쪽으로 90도 회전 */
+            }
+            100% {
+                transform: rotate(0deg);   /* 원위치 */
+            }
+        }
+
+        img {
+            width: 150px;
+            /* 애니메이션 이름 / 1초 동안 / 무한 반복(infinite) */
+            animation: rotateLeftRight 1s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>왼쪽/오른쪽 90도 왕복 회전</h3>
+    <hr>
+    <img src="spongebob.png" alt="회전 이미지">
+
+</body>
+</html>

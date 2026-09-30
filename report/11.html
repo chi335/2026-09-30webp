@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션 응용</title>
+    <style>
+        /* 키프레임 정의: 오른쪽 끝(100%)에서 왼쪽 끝(0%)으로 이동 */
+        @keyframes slideLeft {
+            from {
+                margin-left: 100%; /* 오른쪽 끝에서 시작 */
+            }
+            to {
+                margin-left: 0%;   /* 왼쪽 끝으로 이동 */
+            }
+        }
+
+        /* p 태그에 애니메이션 적용 */
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            animation-name: slideLeft;      /* 애니메이션 이름 지정 */
+            animation-duration: 3s;         /* 3초 동안 진행 */
+            animation-iteration-count: 1;   /* 1회만 실행 */
+        }
+    </style>
+</head>
+<body>
+
+    <h3>애니메이션 응용</h3>
+    <hr>
+
+    <p>❓ 질문 있습니다.</p>
+
+</body>
+</html>

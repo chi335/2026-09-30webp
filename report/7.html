@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>1초에 한 바퀴 회전</title>
+    <style>
+        /* 키프레임 정의: 0도에서 360도까지 회전 */
+        @keyframes rotateContinuous {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            width: 150px;
+            /* 애니메이션 이름 / 1초 동안 / 일정한 속도로(linear) / 무한 반복(infinite) */
+            animation: rotateContinuous 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>1초에 한 바퀴씩 무한 회전</h3>
+    <hr>
+    <img src="spongebob.png" alt="회전 이미지">
+
+</body>
+</html>

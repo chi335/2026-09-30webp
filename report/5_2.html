@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>리스트 만들기</title>
+    <style>
+        /* 세계지도 이미지를 배경으로 설정 */
+        ul {
+            background-image: url('worldmap.png'); /* 배경 이미지 설정 */
+            background-size: cover;               /* 이미지 크기에 맞게 채우기 */
+            background-repeat: no-repeat;         /* 이미지 반복 방지 */
+            list-style-type: square;              /* 사각형 마커 */
+            width: 250px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+
+        /* 마우스 올렸을 때 */
+        li:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>가보고 싶은 나라</h3>
+    <hr>
+
+    <ul>
+        <li>프랑스</li>
+        <li>독일</li>
+        <li>칠레</li>
+        <li>남아프리카공화국</li>
+    </ul>
+
+</body>
+</html>

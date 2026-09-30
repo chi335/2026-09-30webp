@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오디오 재생리스트</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        /* 셀 내부의 요소들을 바닥선에 똑같이 맞춤 */
+        td {
+            padding: 2px 4px;
+            vertical-align: bottom;
+        }
+
+        /* 1, 2, 3 마커 박스 (24px x 24px 정사각형) */
+        .num-box {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 22px; /* 숫자를 세로 중앙으로 */
+            border: 1px solid #000;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        /* 곡 제목 셀 (밑줄 위치) */
+        .song-cell {
+            border-bottom: 1px solid #000;
+            width: 220px;
+            padding-left: 8px;
+            padding-bottom: 2px;
+        }
+
+        /* 재생, 중지 버튼 크기 완전 동일 통일 (가로 50px, 세로 24px) */
+        button {
+            cursor: pointer;
+            width: 50px;        /* 모든 버튼의 가로 크기 동일 지정 */
+            height: 24px;       /* 마커 높이(24px)와 동일 지정 */
+            line-height: 22px;  /* 버튼 텍스트 세로 중앙 정렬 */
+            margin-left: 2px;
+            padding: 0;         /* 내부 여백 차이로 인한 크기 변형 방지 */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 13px;
+        }
+
+        /* 마우스 호버 시 magenta 색상 적용 */
+        button:hover {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>오디오 재생리스트</h3>
+    <hr>
+
+    <table>
+        <tr>
+            <td><span class="num-box">1</span></td>
+            <td class="song-cell">애국가</td>
+            <td>
+                <button type="button">재생</button>
+                <button type="button">중지</button>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="num-box">2</span></td>
+            <td class="song-cell">Moon Glow</td>
+            <td>
+                <button type="button">재생</button>
+                <button type="button">중지</button>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="num-box">3</span></td>
+            <td class="song-cell">Embraceable You</td>
+            <td>
+                <button type="button">재생</button>
+                <button type="button">중지</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

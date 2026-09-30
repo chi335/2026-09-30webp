@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트폰 사용 만족도 설문조사</title>
+    <link rel="stylesheet" href="survey4.css">
+</head>
+<body>
+
+    <!-- 헤더 영역 (20%) -->
+    <header>
+        <h1>스마트폰 사용 만족도 설문조사</h1>
+        <p>현대인의 필수품 스마트폰, 여러분의 이용 경험과 의견을 들려주세요!</p>
+    </header>
+
+    <!-- 중앙 컨텐츠 컨테이너 (72%) -->
+    <div class="content-wrapper">
+        <!-- 네비게이션 영역 (72%) -->
+        <nav>
+            <h2>메뉴</h2>
+            <a href="index.html" class="back-link">← 메인 페이지로</a>
+        </nav>
+
+        <!-- 본문 설문 폼 영역 (72%) -->
+        <section>
+            <article>
+                <h2>설문 작성</h2>
+                <form action="#" method="post">
+                    
+                    <div class="form-group">
+                        <label for="username">이름 (또는 닉네임)</label>
+                        <input type="text" id="username" name="username" placeholder="이름을 입력해주세요" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">이메일 주소</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="main-use">가장 많이 사용하는 스마트폰 용도</label>
+                        <select id="main-use" name="main_use">
+                            <option value="">-- 용도를 선택해주세요 --</option>
+                            <option value="sns">SNS 및 메신저</option>
+                            <option value="media">동영상 시청 및 스트리밍</option>
+                            <option value="game">모바일 게임</option>
+                            <option value="work">업무 및 금융 거래</option>
+                            <option value="camera">사진 및 영상 촬영</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>현재 사용하는 스마트폰의 전반적인 만족도</label>
+                        <div class="option-group">
+                            <label class="inline-label">
+                                <input type="radio" name="satisfaction" value="very-satisfied"> 매우 만족
+                            </label>
+                            <label class="inline-label">
+                                <input type="radio" name="satisfaction" value="satisfied" checked> 만족
+                            </label>
+                            <label class="inline-label">
+                                <input type="radio" name="satisfaction" value="neutral"> 보통
+                            </label>
+                            <label class="inline-label">
+                                <input type="radio" name="satisfaction" value="dissatisfied"> 불만족
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">스마트폰 기능 개선 바라는 점이나 기타 의견</label>
+                        <textarea id="comments" name="comments" placeholder="자유롭게 의견을 적어주세요."></textarea>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="submit" class="submit-btn">설문 제출하기</button>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </div>
+
+    <!-- 푸터 영역 (8%) -->
+    <footer>
+        <p>&copy; 2026 스마트폰 정보 페이지. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
